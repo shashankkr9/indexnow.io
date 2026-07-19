@@ -62,40 +62,71 @@ const jsonLd = [
 >
   <section class="hero">
     <div class="container">
-      <h1>Get your Shopify store indexed on <em>Bing, ChatGPT&nbsp;&amp;&nbsp;Copilot</em> — in minutes, not weeks</h1>
-      <p class="lede">
-        Bing's index now powers DuckDuckGo, Yahoo, ChatGPT search, and Microsoft
-        Copilot. If your products aren't in it, a growing share of buyers will
-        never see them. IndexNow fixes that — automatically.
-      </p>
-      <div class="hero-actions">
-        <a href={APP_URL} class="btn btn-primary" rel="noopener">Install Free on Shopify</a>
-        <a href="/blog/shopify-store-not-showing-up-on-bing/" class="btn btn-secondary">Store not showing on Bing? →</a>
-      </div>
-      <p class="hero-proof">
-        <span class="stars">★★★★★</span>&nbsp; 4.6 on the Shopify App Store · 29 reviews · 100% free
-      </p>
-      <div class="engines">
-        <span>Bing</span>
-        <span>ChatGPT search</span>
-        <span>Microsoft Copilot</span>
-        <span>DuckDuckGo</span>
-        <span>Yahoo</span>
-        <span>Yandex</span>
-        <span>Naver</span>
+      <div class="hero-grid">
+        <div>
+          <h1>Get your Shopify store indexed on <em>Bing, ChatGPT&nbsp;&amp;&nbsp;Copilot</em> — in minutes, not weeks</h1>
+          <p class="lede">
+            Bing's index now powers DuckDuckGo, Yahoo, ChatGPT search, and Microsoft
+            Copilot. If your products aren't in it, a growing share of buyers will
+            never see them. IndexNow fixes that — automatically.
+          </p>
+          <div class="hero-actions">
+            <a href={APP_URL} class="btn btn-primary" rel="noopener">Install Free on Shopify</a>
+            <a href="/blog/shopify-store-not-showing-up-on-bing/" class="btn btn-secondary">Store not showing on Bing? →</a>
+          </div>
+          <p class="hero-proof">
+            <span class="stars">★★★★★</span>&nbsp; 4.6 on the Shopify App Store · 29 reviews · 100% free
+          </p>
+        </div>
+        <div class="ping-panel" aria-label="Example of automatic IndexNow submissions">
+          <div class="ping-panel-head">
+            <span>indexnow — submission log</span>
+            <span class="ping-live">live</span>
+          </div>
+          <div class="ping-rows">
+            <div class="ping-row">
+              <span class="ping-url"><span class="ping-verb">PING</span>/products/linen-summer-dress</span>
+              <span class="ping-status">202 ✓</span>
+            </div>
+            <div class="ping-row">
+              <span class="ping-url"><span class="ping-verb">PING</span>/collections/new-arrivals</span>
+              <span class="ping-status">202 ✓</span>
+            </div>
+            <div class="ping-row">
+              <span class="ping-url"><span class="ping-verb">PING</span>/products/ceramic-mug-set</span>
+              <span class="ping-status">202 ✓</span>
+            </div>
+            <div class="ping-row">
+              <span class="ping-url"><span class="ping-verb">PING</span>/blogs/news/summer-lookbook</span>
+              <span class="ping-status">202 ✓</span>
+            </div>
+            <div class="ping-row">
+              <span class="ping-url"><span class="ping-verb">PING</span>/pages/size-guide</span>
+              <span class="ping-status">202 ✓</span>
+            </div>
+          </div>
+          <div class="ping-panel-foot">
+            one ping reaches <strong>Bing</strong> · <strong>DuckDuckGo</strong> ·
+            <strong>ChatGPT</strong> · <strong>Copilot</strong> · <strong>Yahoo</strong>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section section-alt">
     <div class="container">
-      <h2>Waiting for Bing's crawler is costing you sales</h2>
-      <p class="section-sub">
-        Shopify merchants see the same pattern over and over: verified in Bing
-        Webmaster Tools, sitemap submitted — and still stuck.
-      </p>
+      <div class="section-head">
+        <span class="eyebrow">The old way — wait to be crawled</span>
+        <h2>Waiting for Bing's crawler is costing you sales</h2>
+        <p class="section-sub">
+          Shopify merchants see the same pattern over and over: verified in Bing
+          Webmaster Tools, sitemap submitted — and still stuck.
+        </p>
+      </div>
       <div class="grid-3">
         <div class="card">
+          <span class="card-tag">Stuck in queue</span>
           <h3>“Discovered but not crawled”</h3>
           <p>
             Bing knows your product pages exist but hasn't bothered to crawl
@@ -104,6 +135,7 @@ const jsonLd = [
           </p>
         </div>
         <div class="card">
+          <span class="card-tag">Out of date</span>
           <h3>Stale prices and dead pages</h3>
           <p>
             You changed a price, renamed a product, or deleted a page — and Bing
@@ -111,6 +143,7 @@ const jsonLd = [
           </p>
         </div>
         <div class="card">
+          <span class="card-tag">Not indexed</span>
           <h3>Invisible to AI shoppers</h3>
           <p>
             ChatGPT and Copilot answer shopping questions from Bing's index. Not
@@ -124,11 +157,14 @@ const jsonLd = [
 
   <section class="section">
     <div class="container">
-      <h2>IndexNow flips the model: you ping Bing</h2>
-      <p class="section-sub">
-        Built on the open IndexNow protocol adopted by Microsoft Bing, Yandex,
-        Naver, Seznam.cz, and Yep. One ping, every engine.
-      </p>
+      <div class="section-head">
+        <span class="eyebrow eyebrow-push">The IndexNow way — push</span>
+        <h2>IndexNow flips the model: you ping Bing</h2>
+        <p class="section-sub">
+          Built on the open IndexNow protocol adopted by Microsoft Bing, Yandex,
+          Naver, Seznam.cz, and Yep. One ping, every engine.
+        </p>
+      </div>
       <div class="grid-3">
         <div class="card">
           <span class="step-num">1</span>
@@ -162,11 +198,14 @@ const jsonLd = [
 
   <section class="section section-alt">
     <div class="container">
-      <h2>Learn Bing SEO for Shopify</h2>
-      <p class="section-sub">
-        Step-by-step guides for every stage — from “why am I not on Bing at
-        all?” to showing up in ChatGPT's shopping answers.
-      </p>
+      <div class="section-head">
+        <span class="eyebrow">Guides</span>
+        <h2>Learn Bing SEO for Shopify</h2>
+        <p class="section-sub">
+          Step-by-step guides for every stage — from “why am I not on Bing at
+          all?” to showing up in ChatGPT's shopping answers.
+        </p>
+      </div>
       <div class="grid-3">
         <a class="card" href="/blog/shopify-store-not-showing-up-on-bing/">
           <h3>Store not showing up on Bing?</h3>
@@ -192,8 +231,11 @@ const jsonLd = [
 
   <section class="section">
     <div class="container">
-      <h2>Frequently asked questions</h2>
-      <p class="section-sub">Straight answers — including what IndexNow won't do.</p>
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+        <p class="section-sub">Straight answers — including what IndexNow won't do.</p>
+      </div>
       <div class="faq">
         {faqs.map((f) => (
           <details>
@@ -207,6 +249,7 @@ const jsonLd = [
 
   <section class="cta-band">
     <div class="container">
+      <span class="eyebrow">202 accepted — indexed in minutes</span>
       <h2>Your next product deserves to be found</h2>
       <p>
         Install once, and every product, collection, page, and blog post you
