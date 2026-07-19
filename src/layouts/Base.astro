@@ -33,7 +33,11 @@ const APP_URL = 'https://apps.shopify.com/bing-seo-indexnow-for-bing';
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content="IndexNow.io" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://indexnow.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://indexnow.io/og.png" />
     {jsonLd.map((schema) => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
