@@ -14,10 +14,10 @@ Goal: rank top-5 for Shopify + Bing indexing queries and funnel organic traffic 
 
 ## Immediate
 
-- [ ] Verify indexnow.io in **Bing Webmaster Tools** and submit `https://indexnow.io/sitemap-index.xml`
-- [ ] Verify in **Google Search Console** and submit the same sitemap
+- [x] Verify indexnow.io in **Bing Webmaster Tools** and submit `https://indexnow.io/sitemap-index.xml`
+- [x] Verify in **Google Search Console** and submit the same sitemap
 - [ ] Set up IndexNow pings for this site itself (dogfooding — we should practice what we sell)
-- [ ] Add an OG image (`/og.png`) so shares look good on social/Slack
+- [x] Add an OG image (`/og.png`) so shares look good on social/Slack
 - [ ] Delete old Netlify site `indexnowio` (nothing points to it anymore)
 - [ ] Delete archived GitHub repo `shashankkr9/indexnow.io-old-lovable-archive` (needs `gh auth refresh -h github.com -s delete_repo`)
 
