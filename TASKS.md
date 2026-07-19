@@ -23,11 +23,10 @@ Goal: rank top-5 for Shopify + Bing indexing queries and funnel organic traffic 
 
 ## Distribution (the fast wins)
 
-- [ ] Answer the Shopify Community threads that already rank for "store not showing up on bing" — genuinely helpful replies linking the fix guide:
-  - https://community.shopify.com/c/shopify-discussions/why-is-my-store-not-appearing-on-bing-search-results/m-p/1054707
-  - https://community.shopify.com/t/bing-webmaster-zero-indexed-pages/566064
-  - https://community.shopify.com/c/shopify-discussions/shopify-store-is-not-visible-on-bing/td-p/2707099
-- [ ] Answer the Microsoft Q&A thread: https://learn.microsoft.com/en-us/answers/questions/2343462/bing-not-index-all-my-products-at-shopify
+- [x] Answer ranking forum threads (closed 2026-07-19 — answered the 2 highest-value ones):
+  - [x] https://community.shopify.com/t/how-to-integrate-bings-indexnow-api-with-my-online-store/279297 (highest intent — people asking for exactly what the app does)
+  - [x] https://community.shopify.com/t/bing-webmaster-zero-indexed-pages/566064
+  - Skipped for now: "store not appearing on Bing" + "store not visible on Bing" threads (drafts exist in session notes); Microsoft Q&A thread is locked (migrated), can't reply
 - [ ] Link indexnow.io from the app listing and from the app's dashboard/onboarding emails
 - [ ] Cross-link from llms-txt app properties where relevant
 
