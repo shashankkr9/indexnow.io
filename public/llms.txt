@@ -1,0 +1,21 @@
+# IndexNow.io
+
+> Guides and a free Shopify app for getting stores indexed on Bing and the AI
+> search surfaces built on Bing's index (ChatGPT search, Microsoft Copilot,
+> DuckDuckGo, Yahoo). Independent site; the official IndexNow protocol spec
+> lives at https://www.indexnow.org.
+
+## App
+
+- [Bing SEO: IndexNow for Bing](https://apps.shopify.com/bing-seo-indexnow-for-bing): Free Shopify app that auto-submits product, collection, page, and blog URLs to Bing and Yandex via the IndexNow protocol, with bulk submission and tracking.
+
+## Guides
+
+- [Bing SEO for Shopify: The Complete Guide](https://indexnow.io/blog/bing-seo-for-shopify/)
+- [Shopify Store Not Showing Up on Bing? 7 Fixes](https://indexnow.io/blog/shopify-store-not-showing-up-on-bing/)
+- [How to Add IndexNow to Shopify](https://indexnow.io/blog/add-indexnow-to-shopify/)
+- [Get Shopify Products into ChatGPT, Copilot & AI Search](https://indexnow.io/blog/get-shopify-products-into-chatgpt/)
+- [Fix "Discovered but Not Crawled" in Bing Webmaster Tools](https://indexnow.io/blog/bing-discovered-but-not-crawled/)
+- [Set Up Bing Webmaster Tools for Shopify](https://indexnow.io/blog/bing-webmaster-tools-for-shopify/)
+- [Submit Your Shopify Sitemap to Bing](https://indexnow.io/blog/submit-shopify-sitemap-to-bing/)
+- [Best IndexNow Apps for Shopify Compared](https://indexnow.io/blog/best-indexnow-apps-for-shopify/)

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indexnow.io/sitemap-index.xml

@@ -1,0 +1,219 @@
+---
+import Base from '../layouts/Base.astro';
+
+const APP_URL = 'https://apps.shopify.com/bing-seo-indexnow-for-bing';
+
+const faqs = [
+  {
+    q: 'What is IndexNow?',
+    a: 'IndexNow is an open protocol (documented at indexnow.org) that lets a website instantly notify search engines when a page is added, updated, or deleted. Instead of waiting for crawlers to rediscover your store, you push changes to Bing, Yandex, Naver, Seznam.cz, and Yep the moment they happen.',
+  },
+  {
+    q: 'Does IndexNow work with Google?',
+    a: 'No. Google has not adopted the IndexNow protocol. IndexNow covers Bing and its partners — and because Bing’s index also powers DuckDuckGo, Yahoo, ChatGPT search, and Microsoft Copilot, one ping reaches far more than Bing itself.',
+  },
+  {
+    q: 'Why is my Shopify store not showing up on Bing?',
+    a: 'The most common causes: your site isn’t verified in Bing Webmaster Tools, your sitemap was never submitted, pages are stuck in “Discovered but not crawled,” or the store is new and Bing simply hasn’t prioritized it. Our fix-it guide walks through all seven causes step by step.',
+  },
+  {
+    q: 'Will this app improve my rankings?',
+    a: 'Indexing is not a ranking guarantee — no honest tool can promise rankings. What IndexNow does is remove the waiting: your new products, price changes, and content edits reach Bing’s index in minutes instead of days or weeks. You can’t rank at all while you’re not indexed.',
+  },
+  {
+    q: 'Is the app really free?',
+    a: 'Yes. Bing SEO: IndexNow for Bing is free to install and use — automatic submissions on every product, collection, page, and blog change, plus bulk submission of your existing URLs.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'IndexNow.io',
+    url: 'https://indexnow.io/',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Bing SEO: IndexNow for Bing',
+    operatingSystem: 'Web',
+    applicationCategory: 'BusinessApplication',
+    url: APP_URL,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.6', ratingCount: '29' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<Base
+  title="IndexNow for Shopify — Get Indexed on Bing, ChatGPT & Copilot in Minutes"
+  description="Your Shopify store invisible on Bing? IndexNow pushes every product and page change to Bing's index — which powers DuckDuckGo, Yahoo, ChatGPT and Copilot. Free app."
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div class="container">
+      <h1>Get your Shopify store indexed on <em>Bing, ChatGPT&nbsp;&amp;&nbsp;Copilot</em> — in minutes, not weeks</h1>
+      <p class="lede">
+        Bing's index now powers DuckDuckGo, Yahoo, ChatGPT search, and Microsoft
+        Copilot. If your products aren't in it, a growing share of buyers will
+        never see them. IndexNow fixes that — automatically.
+      </p>
+      <div class="hero-actions">
+        <a href={APP_URL} class="btn btn-primary" rel="noopener">Install Free on Shopify</a>
+        <a href="/blog/shopify-store-not-showing-up-on-bing/" class="btn btn-secondary">Store not showing on Bing? →</a>
+      </div>
+      <p class="hero-proof">
+        <span class="stars">★★★★★</span>&nbsp; 4.6 on the Shopify App Store · 29 reviews · 100% free
+      </p>
+      <div class="engines">
+        <span>Bing</span>
+        <span>ChatGPT search</span>
+        <span>Microsoft Copilot</span>
+        <span>DuckDuckGo</span>
+        <span>Yahoo</span>
+        <span>Yandex</span>
+        <span>Naver</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Waiting for Bing's crawler is costing you sales</h2>
+      <p class="section-sub">
+        Shopify merchants see the same pattern over and over: verified in Bing
+        Webmaster Tools, sitemap submitted — and still stuck.
+      </p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>“Discovered but not crawled”</h3>
+          <p>
+            Bing knows your product pages exist but hasn't bothered to crawl
+            them. New and low-authority stores sit in this queue for weeks —
+            it's the single most common complaint on the Shopify forums.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Stale prices and dead pages</h3>
+          <p>
+            You changed a price, renamed a product, or deleted a page — and Bing
+            keeps showing the old version until its crawler happens to return.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Invisible to AI shoppers</h3>
+          <p>
+            ChatGPT and Copilot answer shopping questions from Bing's index. Not
+            indexed on Bing means not recommended by AI — no matter how good
+            your Google SEO is.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>IndexNow flips the model: you ping Bing</h2>
+      <p class="section-sub">
+        Built on the open IndexNow protocol adopted by Microsoft Bing, Yandex,
+        Naver, Seznam.cz, and Yep. One ping, every engine.
+      </p>
+      <div class="grid-3">
+        <div class="card">
+          <span class="step-num">1</span>
+          <h3>Install the free app</h3>
+          <p>
+            One click from the Shopify App Store. The app verifies your store
+            with the IndexNow API for you — no key files, no code, no theme
+            edits.
+          </p>
+        </div>
+        <div class="card">
+          <span class="step-num">2</span>
+          <h3>Bulk-submit your catalog</h3>
+          <p>
+            Push your existing products, collections, pages, and blog posts to
+            Bing in one action instead of waiting for the crawler to find them.
+          </p>
+        </div>
+        <div class="card">
+          <span class="step-num">3</span>
+          <h3>Every change auto-pings</h3>
+          <p>
+            Add a product, edit a price, publish a post — the app notifies Bing
+            and Yandex instantly, and tracks every submission so you can see
+            what's been sent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Learn Bing SEO for Shopify</h2>
+      <p class="section-sub">
+        Step-by-step guides for every stage — from “why am I not on Bing at
+        all?” to showing up in ChatGPT's shopping answers.
+      </p>
+      <div class="grid-3">
+        <a class="card" href="/blog/shopify-store-not-showing-up-on-bing/">
+          <h3>Store not showing up on Bing?</h3>
+          <p>The 7 causes and exact fixes — verification, sitemaps, robots.txt, crawl priority, and more.</p>
+          <span class="read-more">Read guide →</span>
+        </a>
+        <a class="card" href="/blog/bing-seo-for-shopify/">
+          <h3>Bing SEO: the complete guide</h3>
+          <p>How Bing differs from Google, what to optimize on Shopify, and how to get crawled faster.</p>
+          <span class="read-more">Read guide →</span>
+        </a>
+        <a class="card" href="/blog/get-shopify-products-into-chatgpt/">
+          <h3>Get products into ChatGPT &amp; Copilot</h3>
+          <p>AI assistants shop from Bing's index. Here's how to make sure your products are in it.</p>
+          <span class="read-more">Read guide →</span>
+        </a>
+      </div>
+      <p style="text-align:center; margin-top: 34px;">
+        <a href="/blog/" class="btn btn-secondary">Browse all guides</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+      <p class="section-sub">Straight answers — including what IndexNow won't do.</p>
+      <div class="faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Your next product deserves to be found</h2>
+      <p>
+        Install once, and every product, collection, page, and blog post you
+        publish reaches Bing's index — and the AI answers built on it —
+        automatically.
+      </p>
+      <a href={APP_URL} class="btn btn-primary" rel="noopener">Install Free on Shopify</a>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  jsonLd?: object[];
+}
+
+const { title, description, jsonLd = [] } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const APP_URL = 'https://apps.shopify.com/bing-seo-indexnow-for-bing';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="IndexNow.io" />
+    <meta name="twitter:card" content="summary" />
+    {jsonLd.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="brand">IndexNow<span>.io</span></a>
+        <nav class="site-nav">
+          <a href="/blog/" class="nav-link">Guides</a>
+          <a href="/blog/best-indexnow-apps-for-shopify/" class="nav-link">Compare Apps</a>
+          <a href={APP_URL} class="btn btn-primary btn-sm" rel="noopener">Install Free App</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">IndexNow<span>.io</span></div>
+            <p class="footer-disclaimer">
+              Guides and tools for getting Shopify stores indexed on Bing and the AI
+              search surfaces it powers. Built by the team behind the free
+              <a href={APP_URL} rel="noopener">Bing SEO: IndexNow for Bing</a> app.
+              IndexNow.io is an independent site and is not affiliated with Microsoft
+              or the IndexNow protocol maintainers — the official protocol
+              documentation lives at
+              <a href="https://www.indexnow.org" rel="noopener">indexnow.org</a>.
+            </p>
+          </div>
+          <div>
+            <h4>Popular guides</h4>
+            <ul>
+              <li><a href="/blog/shopify-store-not-showing-up-on-bing/">Store not showing on Bing</a></li>
+              <li><a href="/blog/bing-seo-for-shopify/">Bing SEO for Shopify</a></li>
+              <li><a href="/blog/add-indexnow-to-shopify/">Add IndexNow to Shopify</a></li>
+              <li><a href="/blog/get-shopify-products-into-chatgpt/">Get products into ChatGPT</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>App</h4>
+            <ul>
+              <li><a href={APP_URL} rel="noopener">Install on Shopify — Free</a></li>
+              <li><a href="/blog/best-indexnow-apps-for-shopify/">Compare IndexNow apps</a></li>
+              <li><a href="/blog/">All guides</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 IndexNow.io</span>
+          <span>Indexing is not a ranking guarantee — but you can't rank if you're not indexed.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
