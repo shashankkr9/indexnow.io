@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 84px; top: 218px; width: 640px; }
+  .ping-panel { left: 828px; top: 108px; width: 688px; }
+  .autocard { position: absolute; z-index: 4; left: 748px; top: 528px; width: 560px;
+    font-family: var(--ui-font); color: #303030;
+    box-shadow: 0 30px 70px -20px rgba(3, 8, 20, 0.85); }
+  .autocard .row { display: flex; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body class="dark">
+
+  <div class="copy">
+    <div class="eyebrow">Set &amp; forget</div>
+    <h1>Add a product. Bing knows in <em>seconds</em>.</h1>
+    <p class="sub">Webhooks watch every product, collection, page, and blog post. Each change becomes an IndexNow ping — no crawling, no waiting, nothing to remember.</p>
+    <p class="micro">powered by the open IndexNow protocol · indexnow.org</p>
+  </div>
+
+  <div class="ping-panel">
+    <div class="ping-head">
+      <span>indexnow — submission log</span>
+      <span class="ping-live">live</span>
+    </div>
+    <div class="ping-rows">
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/products/linen-summer-dress</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/collections/new-arrivals</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/products/ceramic-mug-set</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/blogs/news/summer-lookbook</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/pages/size-guide</span><span class="st">202 ✓</span></div>
+    </div>
+    <div class="ping-foot">
+      one ping reaches <strong>Bing</strong> · <strong>DuckDuckGo</strong> · <strong>ChatGPT</strong> · <strong>Copilot</strong> · <strong>Yahoo</strong>
+    </div>
+  </div>
+
+  <div class="p-card autocard">
+    <div class="row">
+      <span class="p-h">Auto sync is enabled</span>
+      <span class="p-badge b-success">On</span>
+    </div>
+    <p class="p-body" style="margin-top:10px;">Changes to your pages are submitted and synced automatically as you make them.</p>
+  </div>
+
+</body>
+</html>

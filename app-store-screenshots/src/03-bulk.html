@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .ui { left: 84px; top: 96px; width: 790px; }
+  .copy { left: 962px; top: 272px; width: 560px; }
+  .fieldhead { display: flex; justify-content: space-between; align-items: baseline; margin-top: 20px; margin-bottom: 10px; }
+  .fieldhead .lbl { font-size: 15.5px; font-weight: 600; }
+  .fieldhead .count { font-family: var(--mono); font-size: 14px; color: #616161; }
+  .help { font-size: 14px; color: #616161; margin-top: 10px; }
+  .actions { display: flex; justify-content: flex-end; margin-top: 18px; }
+  .p-toast { left: 250px; top: 656px; }
+</style>
+</head>
+<body>
+
+  <div class="ui">
+    <div class="p-title">Submit URLs</div>
+    <div class="p-subtitle">Push existing pages to search engines without waiting for the crawler</div>
+    <div class="p-card" style="margin-top:20px;">
+      <div class="p-seg"><span>Automatic</span><span class="on">Manual</span></div>
+      <div class="fieldhead">
+        <span class="lbl">Enter URLs</span>
+        <span class="count">247 / 10,000 URLs</span>
+      </div>
+      <div class="p-field">
+        https://aurora-living.com/products/linen-summer-dress<br>
+        https://aurora-living.com/products/ceramic-mug-set<br>
+        https://aurora-living.com/products/oak-serving-board<br>
+        https://aurora-living.com/collections/new-arrivals<br>
+        https://aurora-living.com/collections/summer-sale<br>
+        https://aurora-living.com/blogs/news/summer-lookbook<br>
+        https://aurora-living.com/pages/size-guide<span class="caret">▎</span>
+      </div>
+      <div class="help">Daily limit: 10,000 URLs &nbsp;•&nbsp; Paste multiple URLs separated by new lines</div>
+      <div class="actions"><button class="p-btn primary">Submit URLs</button></div>
+    </div>
+  </div>
+
+  <div class="p-toast"><span class="tick">✓</span> 247 URLs submitted successfully</div>
+
+  <div class="copy">
+    <div class="eyebrow">Bulk submission</div>
+    <h1>Backfill your <em>entire catalog</em> in one click</h1>
+    <p class="sub">Push up to 10,000 URLs a day — products, collections, pages, and blog posts your store published long before the app was installed.</p>
+  </div>
+
+</body>
+</html>

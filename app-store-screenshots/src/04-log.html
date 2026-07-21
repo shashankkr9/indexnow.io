@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 84px; top: 66px; width: 1300px; }
+  .copy h1 { font-size: 62px; }
+  .copy .sub { max-width: 900px; margin-top: 18px; font-size: 23px; }
+  .ui { left: 84px; right: 84px; width: 1432px; top: 352px; height: 620px; }
+  .chip { right: 120px; top: 314px; }
+  .loghead { display: flex; justify-content: space-between; align-items: center; }
+  .loghead .left { display: flex; align-items: center; gap: 16px; }
+  .p-table td { padding: 15px 16px; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow">Submission history</div>
+    <h1>See exactly what Bing was told — <em>and when</em></h1>
+    <p class="sub">Every submission is logged: which URL, what changed, whether it was automatic or manual, and when it was sent.</p>
+  </div>
+
+  <div class="chip"><span class="dim">synced</span> 12,482 URLs <span class="ok">✓</span></div>
+
+  <div class="ui">
+    <div class="loghead">
+      <div class="left">
+        <span class="p-title" style="font-size:24px;">Pages</span>
+        <span class="p-badge b-success">Synced · 12,482</span>
+      </div>
+      <button class="p-btn sec">Export</button>
+    </div>
+    <div class="p-card" style="margin-top:18px; padding:0; overflow:hidden;">
+      <table class="p-table">
+        <tr><th style="width:56px;"></th><th>URL</th><th>Action</th><th>Mode</th><th>Status</th><th class="t-right">Time</th></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/products/linen-summer-dress</td><td>Updated</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">2 minutes ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/products/travertine-table-lamp</td><td>New product</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">18 minutes ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/collections/new-arrivals</td><td>New collection</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">43 minutes ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/products/discontinued-wool-throw</td><td>Deleted</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">1 hour ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/pages/size-guide</td><td>Updated</td><td>Manual</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">2 hours ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/blogs/news/summer-lookbook</td><td>Updated</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">3 hours ago</td></tr>
+        <tr><td><span class="p-check"></span></td><td class="t-url">/products/ceramic-mug-set</td><td>New product</td><td>Auto</td><td><span class="p-badge b-success">Synced</span></td><td class="t-right">5 hours ago</td></tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

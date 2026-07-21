@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 84px; top: 236px; width: 660px; }
+  .copy h1 { font-size: 78px; }
+  .ping-panel { left: 856px; top: 104px; width: 660px; }
+  .statuscard { position: absolute; z-index: 4; left: 776px; top: 560px; width: 470px;
+    font-family: var(--ui-font); color: #303030;
+    box-shadow: 0 34px 80px -22px rgba(8, 18, 38, 0.45); }
+  .statuscard .row { display: flex; justify-content: space-between; align-items: center; }
+  .statuscard .num { font-size: 44px; font-weight: 650; letter-spacing: -0.02em; color: #1a1a1a; margin-top: 14px; }
+  .statuscard .cap { font-size: 15px; color: #616161; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow">Instant indexing</div>
+    <h1>Stop waiting for the <em>crawler</em></h1>
+    <p class="sub">The moment your store changes, IndexNow pings Bing, DuckDuckGo, ChatGPT search, and Copilot — automatically.</p>
+    <p class="micro">free to install · live in 60 seconds</p>
+  </div>
+
+  <div class="ping-panel">
+    <div class="ping-head">
+      <span>indexnow — submission log</span>
+      <span class="ping-live">live</span>
+    </div>
+    <div class="ping-rows">
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/products/linen-summer-dress</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/collections/new-arrivals</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/products/ceramic-mug-set</span><span class="st">202 ✓</span></div>
+      <div class="ping-row"><span class="url"><span class="verb">PING</span>/blogs/news/summer-lookbook</span><span class="st">202 ✓</span></div>
+    </div>
+    <div class="ping-foot">
+      one ping reaches <strong>Bing</strong> · <strong>DuckDuckGo</strong> · <strong>ChatGPT</strong> · <strong>Copilot</strong> · <strong>Yahoo</strong>
+    </div>
+  </div>
+
+  <div class="p-card statuscard">
+    <div class="row">
+      <span class="p-h">IndexNow Status</span>
+      <span class="p-badge b-success">Enabled</span>
+    </div>
+    <div class="num">12,482</div>
+    <div class="cap">URLs submitted to search engines</div>
+  </div>
+
+</body>
+</html>

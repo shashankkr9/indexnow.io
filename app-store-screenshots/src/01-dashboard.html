@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 84px; top: 208px; width: 566px; }
+  .ui { left: 730px; top: 104px; width: 792px; }
+  .chip { left: 664px; top: 56px; }
+  .statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; }
+  .stat-num { font-size: 40px; font-weight: 650; letter-spacing: -0.02em; margin: 12px 0 2px; }
+  .stat-label { font-size: 15px; color: #616161; }
+  .cardhead { display: flex; justify-content: space-between; align-items: center; }
+  .recent { margin-top: 18px; padding: 0; overflow: hidden; }
+  .recent .cardhead { padding: 20px 24px 14px; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow">Auto-sync</div>
+    <h1>Every store change, pushed to Bing — <em>automatically</em></h1>
+    <p class="sub">New products, price edits, deleted pages: submitted to Bing&rsquo;s index the moment you hit Save.</p>
+    <p class="micro"><span class="stars">★★★★★</span>&nbsp; 4.6 · free to install</p>
+  </div>
+
+  <div class="chip"><span class="dim">PING</span> api.indexnow.org <span class="ok">→ 202 ✓</span></div>
+
+  <div class="ui">
+    <div class="p-title">Welcome, Aurora Living</div>
+    <div class="p-subtitle">Monitor and manage your IndexNow SEO submissions</div>
+
+    <div class="statgrid">
+      <div class="p-card">
+        <div class="cardhead">
+          <span class="p-h">IndexNow Status</span>
+          <span class="p-badge b-success">Enabled</span>
+        </div>
+        <div class="stat-num">12,482</div>
+        <div class="stat-label">URLs submitted</div>
+      </div>
+      <div class="p-card">
+        <div class="cardhead">
+          <span class="p-h">Automatic Sync</span>
+          <span class="p-badge b-info">Daily</span>
+        </div>
+        <p class="p-body" style="margin-top:12px;">Your store syncs with search engines daily.</p>
+        <button class="p-btn sec" style="margin-top:14px;">Turn off auto sync</button>
+      </div>
+    </div>
+
+    <div class="p-card recent">
+      <div class="cardhead">
+        <span class="p-h">Recent submissions</span>
+        <span class="p-link">View all</span>
+      </div>
+      <table class="p-table">
+        <tr><th>URL</th><th>Status</th><th>Action</th><th class="t-right">Time</th></tr>
+        <tr><td class="t-url">/products/linen-summer-dress</td><td><span class="p-badge b-success">Synced</span></td><td>Updated</td><td class="t-right">2 min ago</td></tr>
+        <tr><td class="t-url">/collections/new-arrivals</td><td><span class="p-badge b-success">Synced</span></td><td>New collection</td><td class="t-right">9 min ago</td></tr>
+        <tr><td class="t-url">/products/ceramic-mug-set</td><td><span class="p-badge b-success">Synced</span></td><td>New product</td><td class="t-right">24 min ago</td></tr>
+        <tr><td class="t-url">/blogs/news/summer-lookbook</td><td><span class="p-badge b-success">Synced</span></td><td>Updated</td><td class="t-right">1 hr ago</td></tr>
+        <tr><td class="t-url">/pages/size-guide</td><td><span class="p-badge b-success">Synced</span></td><td>Updated</td><td class="t-right">3 hr ago</td></tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

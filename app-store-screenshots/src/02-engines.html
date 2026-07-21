@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 0; right: 0; top: 74px; text-align: center; }
+  .copy .eyebrow { justify-content: center; }
+  .eyebrow::before { display: none; }
+  .copy h1 { max-width: 1000px; margin: 0 auto; }
+  .copy .sub { max-width: 880px; margin-left: auto; margin-right: auto; margin-top: 20px; font-size: 23px; }
+  .ui { left: 210px; width: 1180px; top: 344px; padding: 28px; }
+  .chip { left: 1190px; top: 310px; }
+  .enginegrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 18px; }
+  .engine { border: 1px solid #e6e6e6; border-radius: 12px; padding: 16px 18px; background: #fff; }
+  .engine .row { display: flex; justify-content: space-between; align-items: center; }
+  .engine .name { font-size: 17px; font-weight: 600; }
+  .engine .desc { font-size: 13.5px; color: #616161; margin-top: 5px; }
+  .foot { margin-top: 18px; font-size: 14.5px; color: #616161; display: flex; align-items: center; gap: 8px; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow push">One ping, every engine</div>
+    <h1>One ping. Six engines — plus <em>ChatGPT &amp; Copilot</em></h1>
+    <p class="sub">Bing&rsquo;s index also powers DuckDuckGo, Yahoo, ChatGPT search, and Microsoft Copilot — one submission reaches them all.</p>
+  </div>
+
+  <div class="chip"><span class="dim">1 ping →</span> 6 engines <span class="ok">✓</span></div>
+
+  <div class="ui">
+    <div class="p-card" style="padding:26px;">
+      <span class="p-h" style="font-size:20px;">Search engines</span>
+      <p class="p-body" style="margin-top:6px;">When you submit URLs, all IndexNow-participating search engines are automatically notified through a single submission.</p>
+      <div class="enginegrid">
+        <div class="engine"><div class="row"><span class="name">Bing</span><span class="p-badge b-success">Supported</span></div><div class="desc">Microsoft Bing search engine</div></div>
+        <div class="engine"><div class="row"><span class="name">Yandex</span><span class="p-badge b-success">Supported</span></div><div class="desc">Russian search engine</div></div>
+        <div class="engine"><div class="row"><span class="name">Naver</span><span class="p-badge b-success">Supported</span></div><div class="desc">South Korean search engine</div></div>
+        <div class="engine"><div class="row"><span class="name">Seznam.cz</span><span class="p-badge b-success">Supported</span></div><div class="desc">Czech search engine</div></div>
+        <div class="engine"><div class="row"><span class="name">Yep</span><span class="p-badge b-success">Supported</span></div><div class="desc">Privacy-focused search engine</div></div>
+        <div class="engine"><div class="row"><span class="name">Amazon</span><span class="p-badge b-success">Supported</span></div><div class="desc">Product search engine</div></div>
+      </div>
+      <div class="foot">Powered by the open IndexNow protocol — URLs are submitted once and shared with every participating engine.</div>
+    </div>
+  </div>
+
+</body>
+</html>

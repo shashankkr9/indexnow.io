@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<link rel="stylesheet" href="mobile.css">
+<style>
+  .chip { left: 840px; top: 800px; }
+  .statrow { display: flex; justify-content: space-between; align-items: center; }
+  .num { font-size: 32px; font-weight: 650; letter-spacing: -0.02em; color: #1a1a1a; margin-top: 10px; }
+  .cap { font-size: 12.5px; color: #616161; margin-top: 2px; }
+  .sub-row { display: flex; justify-content: space-between; align-items: center; padding: 11px 0; border-bottom: 1px solid #f0f0f0; }
+  .sub-row:last-child { border-bottom: none; }
+  .sub-row .u { font-family: var(--mono); font-size: 11.5px; color: #1a1a1a; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow">Auto-sync</div>
+    <h1>Every store change, pushed to <em>Bing</em></h1>
+    <p class="sub">New products, price edits, deleted pages — synced from your pocket, or with no one watching at all.</p>
+    <p class="micro"><span class="stars">★★★★★</span>&nbsp; 4.6 · free to install</p>
+  </div>
+
+  <div class="chip"><span class="dim">PING</span> api.indexnow.org <span class="ok">→ 202 ✓</span></div>
+
+  <div class="ui">
+    <div class="p-title">Welcome, Aurora Living</div>
+    <div class="p-subtitle">Your store is being indexed automatically</div>
+
+    <div class="p-card" style="margin-top:16px;">
+      <div class="statrow">
+        <span class="p-h">IndexNow Status</span>
+        <span class="p-badge b-success">Enabled</span>
+      </div>
+      <div class="num">12,482</div>
+      <div class="cap">URLs submitted to search engines</div>
+    </div>
+
+    <div class="p-card" style="margin-top:12px;">
+      <div class="statrow">
+        <span class="p-h">Automatic Sync</span>
+        <span class="p-badge b-info">Daily</span>
+      </div>
+      <p class="p-body" style="margin-top:6px;">Changes to products, collections, pages, and blogs are submitted as they happen.</p>
+    </div>
+
+    <div class="p-card" style="margin-top:12px;">
+      <span class="p-h">Recent submissions</span>
+      <div style="margin-top:6px;">
+        <div class="sub-row"><span class="u">/products/linen-summer-dress</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/collections/new-arrivals</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/products/ceramic-mug-set</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/blogs/news/summer-lookbook</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/pages/size-guide</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/products/oak-serving-board</span><span class="p-badge b-success">Synced</span></div>
+        <div class="sub-row"><span class="u">/collections/summer-sale</span><span class="p-badge b-success">Synced</span></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

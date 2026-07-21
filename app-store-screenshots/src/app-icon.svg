@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1d3d"/><stop offset="1" stop-color="#081226"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#0a5cff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0a5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+  <rect width="1200" height="1200" fill="url(#glow)"/>
+  <g transform="translate(310,420) scale(5.6)">
+    <path d="M60 0 L8 58 L38 58 L30 100 L92 40 L55 40 Z" fill="url(#bolt)" stroke="url(#bolt)" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <path d="M786.1 382.5 A145 145 0 0 0 683.5 279.9" fill="none" stroke="#37e2a1" stroke-width="48" stroke-linecap="round"/>
+  <path d="M866.8 339.6 A235 235 0 0 0 726.4 199.2" fill="none" stroke="#37e2a1" stroke-width="48" stroke-linecap="round"/>
+</svg>

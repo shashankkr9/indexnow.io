@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;550;600;650;700&display=block" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .copy { left: 84px; top: 232px; width: 590px; }
+  .ui { left: 772px; top: 138px; width: 744px; }
+  .chip { left: 706px; top: 90px; }
+  .steps { display: flex; justify-content: space-between; align-items: baseline; }
+  .steps .t { font-size: 15.5px; font-weight: 600; }
+  .steps .n { font-family: var(--mono); font-size: 13.5px; color: #616161; }
+  .opt-t { font-size: 16.5px; font-weight: 600; }
+  .opt-d { font-size: 14.5px; color: #616161; margin-top: 5px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+  <div class="copy">
+    <div class="eyebrow">Quick setup</div>
+    <h1>Live in <em>60 seconds</em>. No code, no theme edits.</h1>
+    <p class="sub">The app registers your store with the IndexNow API for you — no key files to host, no DNS records, no developer required.</p>
+  </div>
+
+  <div class="chip"><span class="dim">key</span> verified <span class="ok">✓</span></div>
+
+  <div class="ui">
+    <div class="p-title" style="font-size:24px;">Get started</div>
+    <div class="p-card" style="margin-top:18px;">
+      <div class="steps">
+        <span class="t">Setup guide</span>
+        <span class="n">2 of 2 steps</span>
+      </div>
+      <div class="p-progress" style="margin-top:12px;"><i style="width:100%;"></i></div>
+
+      <div class="p-h" style="margin-top:26px; font-size:20px;">How do you want pages to sync?</div>
+
+      <div class="p-option on" style="margin-top:18px;">
+        <span class="p-radio"></span>
+        <span>
+          <span class="opt-t">Automatically submit URLs</span>
+          <div class="opt-d">We watch for changes on your store and sync them to the selected search engines automatically.</div>
+        </span>
+      </div>
+      <div class="p-option" style="margin-top:12px;">
+        <span class="p-radio"></span>
+        <span>
+          <span class="opt-t">Manually submit URLs</span>
+          <div class="opt-d">Submit URLs to search engines yourself, whenever you want.</div>
+        </span>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; margin-top:24px;">
+        <button class="p-btn primary">Complete setup</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
