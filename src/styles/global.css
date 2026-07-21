@@ -75,11 +75,14 @@ a:hover { text-decoration: underline; }
   gap: 16px;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
   font-weight: 800;
   font-size: 1.25rem;
   color: var(--ink);
   letter-spacing: -0.02em;
 }
+.brand-mark { display: block; margin-right: 10px; }
 .brand:hover { text-decoration: none; }
 .brand span { color: var(--accent); }
 .site-nav { display: flex; align-items: center; gap: 24px; }
@@ -462,7 +465,13 @@ a.card .card-meta {
 .site-footer li { margin-bottom: 9px; }
 .site-footer a { color: #9fb0cc; }
 .site-footer a:hover { color: #fff; }
-.footer-brand { color: #fff; font-weight: 800; font-size: 1.1rem; }
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
 .footer-brand span { color: #5c8dff; }
 .footer-disclaimer { font-size: 0.82rem; line-height: 1.6; margin-top: 12px; }
 .footer-bottom {
