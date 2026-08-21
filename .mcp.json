@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "intercom": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://mcp.intercom.com/mcp"
+      ]
+    },
+    "shopify-dev-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shopify/dev-mcp@latest"
+      ]
+    }
+  }
+}
