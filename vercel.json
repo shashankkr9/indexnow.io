@@ -2,9 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.indexnow.io" }],
-      "destination": "https://indexnow.io/:path*",
+      "destination": "https://indexnow.io/$1",
       "permanent": true
     }
   ]
